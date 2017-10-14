@@ -15,7 +15,7 @@ namespace newAirlines.Models
         public int KierunekId { get;  set;}
         public int SamolotId { get;  set;}
         public int ZalogaId { get;  set;}
-        public string DataOdlotu { get;  set;}
-        public string  DataPrzylotu { get;  set;}
+        public DateTime DataOdlotu { get;  set;}
+        public DateTime  DataPrzylotu { get;  set;}
     }
 }

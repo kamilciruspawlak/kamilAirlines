@@ -19,7 +19,9 @@ namespace newAirlines.PersistanceContextEF
         public DbSet<Samolot> Samolot { get; set; }
         public DbSet<Lot> Lot { get; set; }
         public DbSet<Kierunek> Kierunek { get; set; }
-
+        public DbSet<Odprawa> Odprawa { get; set; }
+        public DbSet<OdprawaPasazer> OdrpawaPasazer { get; set; }
+        public DbSet<Pasazer> Pasazer { get; set; }
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             modelBuilder.Conventions.Remove<PluralizingTableNameConvention>();

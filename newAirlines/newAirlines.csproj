@@ -54,6 +54,9 @@
   <ItemGroup>
     <Compile Include="Models\Kierunek.cs" />
     <Compile Include="Models\Lot.cs" />
+    <Compile Include="Models\Odprawa.cs" />
+    <Compile Include="Models\OdprawaPasazer.cs" />
+    <Compile Include="Models\Pasazer.cs" />
     <Compile Include="Models\Samolot.cs" />
     <Compile Include="Models\TypSamolotu.cs" />
     <Compile Include="PersistanceContextEF\AirlineContxet.cs" />
