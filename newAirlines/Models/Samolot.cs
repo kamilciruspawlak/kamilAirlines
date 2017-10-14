@@ -16,8 +16,9 @@ namespace newAirlines.Models
         [Required]
         [Column(TypeName = "nchar")]
         [StringLength(5)]        public string NrSeryjny { get; set; }
-        public int? TypId { get; set; }
+        public int TypId { get; set; }
+        [ForeignKey("TypId")]
         public TypSamolotu TypSamolotu { get; set; }
-
+        public virtual ICollection<Lot> Lot { get; set; }
     }
 }

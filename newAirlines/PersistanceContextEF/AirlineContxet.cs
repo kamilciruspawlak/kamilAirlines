@@ -17,7 +17,8 @@ namespace newAirlines.PersistanceContextEF
         }
         public DbSet<TypSamolotu> TypSamolotu { get; set; }
         public DbSet<Samolot> Samolot { get; set; }
-
+        public DbSet<Lot> Lot { get; set; }
+        public DbSet<Kierunek> Kierunek { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
