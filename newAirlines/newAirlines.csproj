@@ -52,13 +52,28 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Migrations\201710141308453_InitialCreate.cs" />
+    <Compile Include="Migrations\201710141308453_InitialCreate.Designer.cs">
+      <DependentUpon>201710141308453_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201710141323574_add Stanowisko.cs" />
+    <Compile Include="Migrations\201710141323574_add Stanowisko.Designer.cs">
+      <DependentUpon>201710141323574_add Stanowisko.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201710141331473_added Stanowisko.cs" />
+    <Compile Include="Migrations\201710141331473_added Stanowisko.Designer.cs">
+      <DependentUpon>201710141331473_added Stanowisko.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Kierunek.cs" />
     <Compile Include="Models\Lot.cs" />
     <Compile Include="Models\Odprawa.cs" />
     <Compile Include="Models\OdprawaPasazer.cs" />
     <Compile Include="Models\Pasazer.cs" />
     <Compile Include="Models\Samolot.cs" />
+    <Compile Include="Models\Stanowisko.cs" />
     <Compile Include="Models\TypSamolotu.cs" />
+    <Compile Include="Models\Zalogant.cs" />
     <Compile Include="PersistanceContextEF\AirlineContxet.cs" />
     <Compile Include="PersistanceContextEF\AirlineInitializer.cs" />
     <Compile Include="Program.cs" />
@@ -68,7 +83,17 @@
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201710141308453_InitialCreate.resx">
+      <DependentUpon>201710141308453_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201710141323574_add Stanowisko.resx">
+      <DependentUpon>201710141323574_add Stanowisko.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201710141331473_added Stanowisko.resx">
+      <DependentUpon>201710141331473_added Stanowisko.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
