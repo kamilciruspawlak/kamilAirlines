@@ -1,4 +1,5 @@
-﻿using System;
+﻿using newAirlines.PersistanceContextEF;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,6 +11,15 @@ namespace newAirlines
     {
         static void Main(string[] args)
         {
+            using (var dbContext = new AirlineContext() )
+            {
+                
+            foreach (var samolot in dbContext.TypSamolotu)
+            {
+                Console.WriteLine($"done {samolot.IloscMiejsc}");
+            }
+            Console.ReadLine();
+            }
         }
     }
 }
